@@ -1,0 +1,148 @@
+.grid-cont1 {
+	display: grid;
+	width: 80%;
+	min-width: 105px;
+	grid-gap: 0px;
+	grid-template-columns:repeat(7,1fr);
+	grid-template-rows:repeat(2,30px);
+	font-weight: bold;
+}
+
+.grid-cont2 {
+	display: grid;
+	width: 80%;
+	min-width: 105px;
+	grid-gap: 0px;
+	grid-template-columns:repeat(7,1fr);
+	grid-template-rows:repeat(20,30px);
+	flex-direction: column;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.grid-cont3 {
+	display: grid;
+	width: 90%;
+	min-width: 105px;
+	grid-gap: 0px;
+	grid-template-columns:repeat(1,1fr 3fr 1fr 21fr);
+	grid-template-rows:repeat(1,30px);
+	font-weight: bold;
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+
+.grid-cursor {
+	cursor: url(images/p20.png), pointer;
+	background-color: ghostwhite;
+}
+
+.grid-bord1 {
+	border: solid black;
+	border-width: 1px;
+}
+
+.grid-bord2 {
+	border: dashed lightgray;
+	border-width: 1px;
+}
+
+.grid-dog {
+	max-width: 80%;
+}
+
+.grid-default {
+	cursor: default;
+	background-color: ghostwhite;
+}
+
+.grid-cont1 > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	overflow: hidden;
+	padding: 1px;
+}
+
+.grid-cont2 > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	overflow: hidden;
+	padding: 1px;
+}
+
+.grid-cont3 > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	overflow: hidden;
+	padding: 1px;
+	font-size: small;
+}
+
+.grid-day {
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+.grid-9 {
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+.grid-10 {
+	grid-row-start: 3;
+	grid-row-end: 5;
+}
+
+.grid-11 {
+	grid-row-start: 5;
+	grid-row-end: 7;
+}
+
+.grid-12 {
+	grid-row-start: 7;
+	grid-row-end: 9;
+}
+
+.grid-12b {
+	grid-row-start: 7;
+	grid-row-end: 9;
+	grid-column-start: 2;
+	grid-column-end: 8;
+	background-color: grey;
+}
+
+.grid-13 {
+	grid-row-start: 9;
+	grid-row-end: 11;
+}
+
+.grid-14 {
+	grid-row-start: 11;
+	grid-row-end: 13;
+}
+
+.grid-15 {
+	grid-row-start: 13;
+	grid-row-end: 15;
+}
+
+.grid-16 {
+	grid-row-start: 15;
+	grid-row-end: 17;
+}
+
+.grid-17 {
+	grid-row-start: 17;
+	grid-row-end: 19;
+}
+
+.grid-18 {
+	grid-row-start: 19;
+	grid-row-end: 21;
+}
