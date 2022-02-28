@@ -1,3 +1,12 @@
+.header {
+	background-image: url('images/imgheader.jpg');
+	background-attachment: local;
+	background-origin: padding-box;
+	background-size: cover;
+	min-height: 200px;
+	max-height: 300px;
+}
+
 .grid-cont1 {
 	display: grid;
 	width: 80%;
