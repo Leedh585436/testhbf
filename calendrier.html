@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width-device width, initial-scale=1">
-	<title>Test tab</title>
+	<title>Calendrier</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -13,18 +13,48 @@
 </head>
 
 <body>
-	<?php
-		include("footer.php");
-	?>
-	<div class="header row">
-		
+	<div class="header" id="header">
+		<div class="width-95 justify-content-center">
+			<div class="row mb-4">
+				<img class="my-auto ml-1" height="80px" src="images/LogoArcanin.png">
+
+				<a class="my-auto ml-auto mr-1" href="login"><img id="log" height="40" src="images/login1.png"></a>
+			</div>
+		</div>
+
+		<div class="posb" style="position: absolute; bottom: 0px;" id="menu">
+			<nav class="navbar navbar-expand-md navbar-dark width-100" role="navigation">
+				<div class="width-100">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse width-100" id="collapsibleNavbar">
+						<ul class="navbar-nav width-100">
+							<li class="nav-item width-20"><center><a id="nav1" class="nav-link" href="" title="Accueil">Accueil</a></center></li>
+							<li class="nav-item width-20"><center><a id="nav2" class="nav-link" href="" title="Presentation">Présentation</a></center></li>
+			          		<li class="nav-item width-20"><center><a id="nav3" class="nav-link" href="" title="Les tarifs">Les Tarifs</a></center></li>
+			          		<li class="nav-item width-20"><center><a id="nav4" class="nav-link" href="" title="Le calendrier">Le Calendrier</a></center></li>
+			          		<li class="nav-item width-20"><center><a id="nav5" class="nav-link" href="" title="Les cours">Les Cours</a></center></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
 	</div>
 	<div class="row justify-content-center">
+		<h1>Le Calendrier</h1>
+	</div>
+	<div class="row justify-content-center">
+		<p>Blabla presentation generale planning</p>
+	</div>
+	<div class="row justify-content-left">
 		<div class="grid-cont3">
 			<div class="grid-cursor grid-bord1" id="prev"><img src="images/dog2.png" class="grid-dog" alt="P"></div>
 			<div class="grid-default grid-bord1" id="week"></div>
 			<div class="grid-cursor grid-bord1" id="next"><img src="images/dog1.png" class="grid-dog" alt="N"></div>
 		</div>
+	</div>
+	<div class="row justify-content-center">
 		<div class="grid-cont1">
 			<div class="grid-day grid-default" id="button"></div>
 			<div class="grid-day grid-default" id="mon"></div>
@@ -35,16 +65,16 @@
 			<div class="grid-day grid-default" id="sat"></div>
 		</div>
 		<div class="grid-cont2">
-			<div class="grid-9 grid-default">9h - 10h</div>
-			<div class="grid-10 grid-default">10h - 11h</div>
-			<div class="grid-11 grid-default">11h - 12h</div>
-			<div class="grid-12 grid-default">12h - 13h</div>
-			<div class="grid-13 grid-default">13h - 14h</div>
-			<div class="grid-14 grid-default">14h - 15h</div>
-			<div class="grid-15 grid-default">15h - 16h</div>
-			<div class="grid-16 grid-default">16h - 17h</div>
-			<div class="grid-17 grid-default">17h - 18h</div>
-			<div class="grid-18 grid-default">18h - 19h</div>
+			<div class="grid-9 grid-default" id="h9">9h - 10h</div>
+			<div class="grid-10 grid-default" id="h10">10h - 11h</div>
+			<div class="grid-11 grid-default" id="h11">11h - 12h</div>
+			<div class="grid-12 grid-default" id="h12">12h - 13h</div>
+			<div class="grid-13 grid-default" id="h13">13h - 14h</div>
+			<div class="grid-14 grid-default" id="h14">14h - 15h</div>
+			<div class="grid-15 grid-default" id="h15">15h - 16h</div>
+			<div class="grid-16 grid-default" id="h16">16h - 17h</div>
+			<div class="grid-17 grid-default" id="h17">17h - 18h</div>
+			<div class="grid-18 grid-default" id="h18">18h - 19h</div>
 			<div class="grid-12b"></div>
 			<div class="grid-9 grid-cursor grid-bord2" id="mon9"><img src="images/c0.png" class="grid-dog" alt="cours" id="mon9i"></div>
 			<div class="grid-10 grid-cursor grid-bord2" id="mon10"><img src="images/c0.png" class="grid-dog" alt="cours" id="mon10i"></div>
@@ -102,10 +132,34 @@
 			<div class="grid-18 grid-cursor grid-bord2" id="sat18"><img src="images/c0.png" class="grid-dog" alt="cours" id="sat18i"></div>
 		</div>
 	</div>
-	<?php
-		include("footer.php");
-	?>
+	<div class="row justify-content-center">
+		<h2>Legende</h2>
+	</div>
+	<div class="row justify-content-center">
+		<div class="grid-cont4" id="gleg">
+			<div class="grid-leg2"><img src="images/ce11.png" class="grid-leg"></div>
+			<div class="grid-leg2"><img src="images/ce12.png" class="grid-leg"></div>
+			<div class="grid-leg2"><img src="images/ce13.png" class="grid-leg"></div>
+			<div class="grid-leg2"><img src="images/ce14.png" class="grid-leg"></div>
+			<div class="grid-leg2"><img src="images/ce15.png" class="grid-leg"></div>
+			<div class="grid-leg2"><img src="images/ce15.png" class="grid-leg"></div>
+			<div class="grid-leg2"><img src="images/ce01.png" class="grid-leg"></div>
+			<div class="grid-leg2"><img src="images/ce02.png" class="grid-leg"></div>
+			<div class="grid-leg2"><img src="images/ce03.png" class="grid-leg"></div>
+			<div></div>
+		</div>
+	</div>
 </body>
+<footer>
+	<div><img src="images/map.jpg" width="100%"></div>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark" role="navigation">
+		<div class="container">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="mentions-legales" title="Mentions">Mentions légales</a></li>
+			</ul>
+		</div>
+	</nav>
+</footer>
 </html>
 
 <script>
@@ -115,6 +169,15 @@
 	var today_day = today.getDay();
 
 	var hours = [9,10,11,13,14,15,16,17,18];
+
+	var creneau = new Array(days.length * (hours.length - 1));
+	for (var i = 0; i < days.length; i++) {
+		for (var ii = 0; ii < hours.length - 1; ii++) {
+			creneau[i * 8 + ii] = days[i] + hours[ii];
+		}
+	}
+	var menu_nav = ['nav1','nav2','nav3','nav4','nav5'];
+
 	var cours_test = ['c1','c2','c3','c4','c5'];
 	var cours_test2 = ['Treibball','Agility','Flyball','Hooper','Education'];
 	var cours_col = ['red','navy','green','purple'];
@@ -133,63 +196,57 @@
 		selected[i] = 0;
 	}
 	$(document).ready(function(){
+		var viewport_width = document.documentElement.clientWidth;
+		var viewport_height = Math.round(viewport_width / 3);
+		var leg_height = Math.round(viewport_width * 36 / 245 * 4 / 5) + 20;
+		document.getElementById('header').style.height = viewport_height + 'px';
+		document.getElementById('gleg').style.height = leg_height + 'px';
+		if (viewport_width < 751) {
+			document.getElementById('menu').style.position = 'relative';
+			document.getElementById('menu').style.bottom = null;
+			var top = viewport_height - 154;
+			document.getElementById('menu').style.top = top + 'px';
+		}
+		else {
+			document.getElementById('menu').style.position = 'absolute';
+			document.getElementById('menu').style.bottom = '0px';
+			document.getElementById('menu').style.top = null;
+		}
+
 		set_tab();
 			
-		document.getElementById('mon9').addEventListener("click",changecol);
-		document.getElementById('mon10').addEventListener("click",changecol);
-		document.getElementById('mon11').addEventListener("click",changecol);
-		document.getElementById('mon13').addEventListener("click",changecol);
-		document.getElementById('mon14').addEventListener("click",changecol);
-		document.getElementById('mon15').addEventListener("click",changecol);
-		document.getElementById('mon16').addEventListener("click",changecol);
-		document.getElementById('mon17').addEventListener("click",changecol);
-		document.getElementById('mon18').addEventListener("click",changecol);
-		document.getElementById('tue9').addEventListener("click",changecol);
-		document.getElementById('tue10').addEventListener("click",changecol);
-		document.getElementById('tue11').addEventListener("click",changecol);
-		document.getElementById('tue13').addEventListener("click",changecol);
-		document.getElementById('tue14').addEventListener("click",changecol);
-		document.getElementById('tue15').addEventListener("click",changecol);
-		document.getElementById('tue16').addEventListener("click",changecol);
-		document.getElementById('tue17').addEventListener("click",changecol);
-		document.getElementById('tue18').addEventListener("click",changecol);
-		document.getElementById('wed9').addEventListener("click",changecol);
-		document.getElementById('wed10').addEventListener("click",changecol);
-		document.getElementById('wed11').addEventListener("click",changecol);
-		document.getElementById('wed13').addEventListener("click",changecol);
-		document.getElementById('wed14').addEventListener("click",changecol);
-		document.getElementById('wed15').addEventListener("click",changecol);
-		document.getElementById('wed16').addEventListener("click",changecol);
-		document.getElementById('wed17').addEventListener("click",changecol);
-		document.getElementById('wed18').addEventListener("click",changecol);
-		document.getElementById('thu9').addEventListener("click",changecol);
-		document.getElementById('thu10').addEventListener("click",changecol);
-		document.getElementById('thu11').addEventListener("click",changecol);
-		document.getElementById('thu13').addEventListener("click",changecol);
-		document.getElementById('thu14').addEventListener("click",changecol);
-		document.getElementById('thu15').addEventListener("click",changecol);
-		document.getElementById('thu16').addEventListener("click",changecol);
-		document.getElementById('thu17').addEventListener("click",changecol);
-		document.getElementById('thu18').addEventListener("click",changecol);
-		document.getElementById('fri9').addEventListener("click",changecol);
-		document.getElementById('fri10').addEventListener("click",changecol);
-		document.getElementById('fri11').addEventListener("click",changecol);
-		document.getElementById('fri13').addEventListener("click",changecol);
-		document.getElementById('fri14').addEventListener("click",changecol);
-		document.getElementById('fri15').addEventListener("click",changecol);
-		document.getElementById('fri16').addEventListener("click",changecol);
-		document.getElementById('fri17').addEventListener("click",changecol);
-		document.getElementById('fri18').addEventListener("click",changecol);
-		document.getElementById('sat9').addEventListener("click",changecol);
-		document.getElementById('sat10').addEventListener("click",changecol);
-		document.getElementById('sat11').addEventListener("click",changecol);
-		document.getElementById('sat13').addEventListener("click",changecol);
-		document.getElementById('sat14').addEventListener("click",changecol);
-		document.getElementById('sat15').addEventListener("click",changecol);
-		document.getElementById('sat16').addEventListener("click",changecol);
-		document.getElementById('sat17').addEventListener("click",changecol);
-		document.getElementById('sat18').addEventListener("click",changecol);
+		for (var i = 0; i < creneau.length; i++) {
+			document.getElementById(creneau[i]).addEventListener("click",changecol);
+		}
+
+		document.getElementById('log').onmouseover = function(){this.src = "images/login2.png";};
+		document.getElementById('log').onmouseout = function(){this.src = "images/login1.png";};
+
+		for (var i = 0; i < menu_nav.length; i++) {
+			document.getElementById(menu_nav[i]).onmouseover = function(){this.style.color = "black";};
+			document.getElementById(menu_nav[i]).onmouseout = function(){this.style.color = "rgba(255,255,255,0.5)";};
+		}
 	});
+
+	window.addEventListener('resize', function() {
+		var viewport_width = document.documentElement.clientWidth;
+		var viewport_height = Math.round(viewport_width / 3);
+		var leg_height = Math.round(viewport_width * 36 / 245 * 4 / 5) + 20;
+		document.getElementById('header').style.height = viewport_height + 'px';
+		document.getElementById('gleg').style.height = leg_height + 'px';
+		if (viewport_width < 751) {
+			document.getElementById('menu').style.position = 'relative';
+			document.getElementById('menu').style.bottom = null;
+			var top = viewport_height - 154;
+			document.getElementById('menu').style.top = top + 'px';
+		}
+		else {
+			document.getElementById('menu').style.position = 'absolute';
+			document.getElementById('menu').style.bottom = '0px';
+			document.getElementById('menu').style.top = null;
+		}
+	});
+
 
 	$('#prev').click(function(){
 		var ndate = today.getTime() - 7 * 24 * 3600000;
@@ -205,6 +262,7 @@
 		set_tab();
 	});
 
+	
 	function changecol(){
 		var idim = this.id + 'i';
 		var estvide = document.getElementById(idim).src.slice(-6);
@@ -330,5 +388,9 @@
 		document.getElementById(dh2).style.backgroundColor = 'ghostwhite';
 		document.getElementById(dh2).style.cursor = 'default';
 		return 'c0';
+	}
+
+	function mouseovernav(){
+		this.style.color = 'black';
 	}
 </script>
