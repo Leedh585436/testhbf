@@ -28,26 +28,24 @@
 				$i=$i+1;
 			} 
 		?>
-		<div>
-			<?php
-				for ($i=0; $i < count($id); $i++) { 				
-					echo '<div><b>';
-						echo $id[$i];
-						echo ' ';
-						echo $type[$i];
-						echo ' ';
-						echo $date[$i];
-						echo ' ';
-						echo $time[$i];
-					echo '</b></div>';      
-				}
-			?>
-		</div>
 		<div class="grid-cont3">
 			<div class="grid-cursor grid-bord1" id="prev"><img src="images/dog2.png" class="grid-dog" alt="P"></div>
 			<div class="grid-default grid-bord1" id="week"></div>
 			<div class="grid-cursor grid-bord1" id="next"><img src="images/dog1.png" class="grid-dog" alt="N"></div>
 		</div>
+		<?php
+			for ($i=0; $i < count($id); $i++) { 				
+				echo '<div><b>';
+					echo $id[$i];
+					echo ' ';
+					echo $type[$i];
+					echo ' ';
+					echo $date[$i];
+					echo ' ';
+					echo $time[$i];
+				echo '</b></div>';      
+			}
+		?>
 		<div class="grid-cont1">
 			<div class="grid-day grid-default" id="button"></div>
 			<div class="grid-day grid-default" id="mon"></div>
