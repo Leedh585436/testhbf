@@ -34,6 +34,7 @@
 			<div class="grid-cursor grid-bord1" id="next"><img src="images/dog1.png" class="grid-dog" alt="N"></div>
 		</div>
 		<?php
+			echo '1- ';
 			for ($i=0; $i < count($id); $i++) { 				
 				echo '<div><b>';
 					echo $id[$i];
