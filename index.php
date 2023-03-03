@@ -37,11 +37,11 @@
 			for ($i=0; $i < count($id); $i++) { 				
 				echo '<div><b>';
 					echo $id[$i];
-					echo ' ';
+					echo ' - ';
 					echo $type[$i];
-					echo ' ';
+					echo ' - ';
 					echo $date[$i];
-					echo ' ';
+					echo ' - ';
 					echo $time[$i];
 				echo '</b></div>';      
 			}
